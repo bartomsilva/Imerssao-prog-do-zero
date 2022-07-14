@@ -5,27 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="Author" content="Bart preDEV">
     <!-- reformulado - Original do Curso Cubos Academy-->
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Curículo Virtual</title>
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
   </head>
+
   <body>
     <header>
-      <div>
-        <a class="link" href="#companys">ONDE TRABALHEI</a>
+      <div class="headerDiv">
+        <a class="linkOndeTrabalhei" href="#companys">ONDE TRABALHEI</a>
       </div>
-
-      <div class="container-social">
-        <a
-          href="https://www.linkedin.com/in/bart-silva-373b11240/"
-          target="_blank"
-        >
+      <div class="rede-social headerDiv">
+        <a href="https://www.linkedin.com/in/bart-silva-373b11240/" target="_blank">
           <img src="assets/linkedin.svg" />
         </a>
         <a href="https://github.com/bartomsilva" target="_blank">
@@ -40,70 +34,85 @@
       </div>
     </header>
 
+    <section class="identification">
+      <h1>Bart Silva</h1>
+      <h2>Estudante - Fullstack</h2>
+      <h3>Recife - Pernambuco</h3>
+    </section>
+
     <main>
-      <div class="container-infos">
-        <h1>Bart Silva</h1>
-        <h2>Estudante - Fullstack</h2>
-        <h3>Recife - Pernambuco</h3>
-      </div>
-      <section class="">
-        <div class="container-side">
-          <div class="dadosPessoais">
-            <span>
-              Biografia
-            </span>
-            <p>
-              Apaixonado por programação desde os 14 anos, já fui programador,
-              nos anos 80 e 90, fiquei muito tempo afastado mas nunca perdi o
-              amor por códigos, hoje estudo novas tecnologías para voltar a 
-              atuar naquilo que amo fazer, !programar" hoje é "codar" rsrsrs. 
-            </p>
-          </div>
-          <div class="dadosPessoais">
-            <span>
-              Contatos
-            </span>
-            <p>
-              Rcife, Pernambuco - bartomsilva@gmail.com
-            </p>
-            <p>(81)-9xxxx-7295</p>
-          </div>
-          <div class="dadosPessoais">
-            <span>
-              Tecnologias
-            </span>
-            <p>
-              Html, CSS, Javascript, c#
-              e bibliotecas do ecosistema.
-            </p>
-          </div>
+      <section class="container-side side-left">
+        <article class="dadosPessoais">
+          <span>
+            Biografia
+          </span>
+          <p>
+            Apaixonado por programação desde os 14 anos, quando vi um computador
+            prela primeira vez na escola, era pra dizer meu nome e data de nascimento
+            ao apresentador e apertar no enter, eu vualá "apareceu: Bartolomeu você já 
+            viveu aproximadamente xxx dias", foi um despetar, comecei a fazer no meu 
+            cardeno anotações de como eu faria aquilo, meu pai me colocou em um curso de
+            BASIC e as aulas eram só escritas, eu fiz o mesmo programa que vi na escola e
+            queria testar, passei três meses ficando depois da aula esperando uma vaga 
+            no único computador que tinha no curso, tinha que agendar e eu tinha conseguido
+            uma vaga pra seis meses rsrsrsrs era dureza, assim esperei 3 meses por uma falta
+            e um dia consegui, digitei meu código e funcionou! foi o máximo, então eu comprava 
+            livros de dbase, e clipper e fui estuando e virei programador nos anos 80 e 90, 
+            fiquei muito tempo afastado mas nunca perdi o
+            amor por códigos, hoje estudo novas tecnologías para voltar a 
+            atuar naquilo que amo fazer, !programar" hoje é "codar" rsrsrs. 
+          </p>
+        </article>
+        
+        <artricle class="dadosPessoais"">
+          <span>
+            Contatos
+          </span>
+          <p>
+            Rcife, Pernambuco - bartomsilva@gmail.com
+          </p>
+          <p>(81)-9xxxx-7295</p>
+        </article>
+        <article class="dadosPessoais">
+          <span>
+            Tecnologias
+          </span>
+          <p>
+            GIT, Html, CSS, Javascript, C#
+            React, SQL, Exprex, Knex, AWS, Firebase.... 
+          </p>
+        </article>
+      </section clas="main-section">
+      <!--FOTO -->
+      <section class="main-section main-section-foto">  
+        <img id="foto" src="assets/eu.jpg" />
+      </section>
+      <section class="container-side side-right">
+        <div class="dadosPessoais">
+          <span>Anos de Experiência</span>
+          <h4>7</h4>
         </div>
-        <img src="assets/eu.jpg" />
-        <div class="container-side right">
-          <div class="dadosPessoais">
-            <span>Anos de Experiência</span>
-            <h1>5</h1>
-          </div>
-          <div class="dadosPessoais">
-            <span>HTML</span>
-            <h3>em andamento</h3>
-          </div>
-          <div class="dadosPessoais">
-            <span>CSS</span>
-            <h3>em andamento</h3>
-          </div>
-          <div class="dadosPessoais">
-            <span>Javascript</span>
-            <h3>em andamento</h3>
-          </div>
+        <div class="dadosPessoais">
+          <span>Programação</span>
+          <h4>Clipper e Delphi</h4>
+        </div>
+        <div class="dadosPessoais">
+          <span>HTML</span>
+          <h4>em andamento</h4>
+        </div>
+        <div class="dadosPessoais">
+          <span>CSS</span>
+          <h4>em andamento</h4>
+        </div>
+        <div class="dadosPessoais">
+          <span>Javascript</span>
+          <h4>em andamento</h4>
         </div>
       </section>
     </main>
-
     <hr />
-
     <section class="container-companys" id="companys">
-      <h1>Onde trabalhei</h1>
+      <h1>Onde poderei trabalhar</h1>
       <div>
         <a href="https://www.ibm.com/br-pt" target="_blank">
           <img src="assets/ibm.png" />

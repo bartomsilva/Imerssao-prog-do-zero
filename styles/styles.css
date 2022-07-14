@@ -3,14 +3,12 @@
   padding: 0;
   margin: 0;
 }
-
 html {
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: "Roboto", sans-serif;
 }
-
 body {
   width: 100%;
   max-width: 1200px;
@@ -21,143 +19,109 @@ body {
   justify-content: space-between;
   color: #353535;
 }
-
 h1 {
-  font-weight: 400;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 4vw;
 }
-
+h2 {font-size: 2.6vw;}
+h3 {font-size: 2vw;}
 hr {
   width: 50%;
   color: #e8f0f2;
   font-weight: normal;
 }
-
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 140px;
-  background-color: yellow;
+  height: 90px;
+  background-image: linear-gradient(to right, rgb(193, 189, 189) , rgb(245, 245, 245));
 }
+header div {width: 50%;}
 
-header div {
-  width: 50%;
+.linkOndeTrabalhei {
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 16px;
+  color: #1c1c1c;
 }
+.linkOndeTrabalhei:hover {
+  color: purple;
+}
+.identification {
+  width: 100%;
+  padding: 35px 0;
+  text-align: center;
+}
+.rede-social {
+  display: flex;
+  justify-content: flex-end;
+}
+.rede-social img {
+  width: 20px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+.rede-social img:hover {opacity: 0.5;}
 
 main {
   width: 100%;
   height: 900px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: aqua;
+/*deixa as três sections com mesmo tamanho*/
+  display: grid;
+  grid-template-columns: 33.333% 33.333% 33.333%;
 }
 
-main img {
-  width: 400px;
+/*configura a foto centralizada na sua section*/
+.main-section-foto {
+  display: block;
+  text-align: center;
+}
+/*ajustes finos na foto*/
+#foto {
+  width: 80%;
   border-radius: 300px;
-  /*border: 1px solid lightgrey;*/
-  border: 1px;
-  border-color: lightgrey;
-  border-style: solid;
+  border: 1px solid rgb(198, 197, 197);
   padding: 18px;
-  background-color: blue;
 }
-
-main img:hover {
-  opacity: 0.95;
-}
-
-main section {
-  width: 100%;
-  height: 800px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: red;
-}
+#foto:hover {opacity: 0.95;}
 
 .container-side {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 500px;
-  width: 250px;
-  background-color: beige;
+  justify-content: space-between; 
+  height: 90%; 
+  width: 100%;
 }
-
-.right {
+.side-left {
+  padding-right: 25px;
+}
+.side-right {
   align-items: flex-end;
   text-align: right;
 }
-
-.item {
+.dadosPessoais {
   display: flex;
   flex-direction: column;
   font-size: 14px;
   color: #222222;
 }
-
-.item span {
+.dadosPessoais span {
+  padding-top: 10px;
+  font-size: 1rem;
   color: #7c7a7a;
   margin-bottom: 18px;
 }
-.item p {
-  line-height: 22px;
-  font-weight: 500;
-}
-.item h1 {
-  font-size: 35px;
+.dadosPessoais p {
+  text-align: justify;
+  font-weight: 500;  
 }
 
-.container-infos {
-  width: 100%;
-  padding: 35px 0;
-  text-align: center;
+.container-companys h1 {
+  font-size: 2rem;
 }
-
-.link {
-  font-size: 14px;
-  font-weight: bold;
-
-  margin-right: 16px;
-
-  color: #1c1c1c;
-}
-.link:hover {
-  color: purple;
-}
-
-.container-logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-  font-weight: bold;
-  margin-bottom: 8px;
-}
-
-.container-logo img {
-  height: 48px;
-  width: 48px;
-  margin-bottom: 4px;
-}
-
-.container-social {
-  display: flex;
-  justify-content: flex-end;
-  background-color: burlywood;
-}
-.container-social img {
-  width: 20px;
-  cursor: pointer;
-  margin-left: 8px;
-}
-.container-social img:hover {
-  opacity: 0.5;
-}
-
 .container-companys {
   text-align: center;
   width: 100%;
@@ -167,8 +131,7 @@ main section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  lign-items: center;
-  background-color: brown;
+  align-items: center;
 }
 .container-companys div {
   display: flex;
@@ -176,9 +139,8 @@ main section {
   justify-content: space-between;
   width: 100%;
 }
-
 .container-companys img {
-  height: 80px;
+  height: 70px;
   width: auto;
 }
 .container-companys img:hover {
