@@ -134,8 +134,9 @@ main {
   align-items: center;
 }
 .container-companys div {
-  display: flex;
-  align-items: flex-end;
+  display: grid;
+  
+/*  align-items: flex-end;*/
   justify-content: space-between;
   width: 100%;
 }
