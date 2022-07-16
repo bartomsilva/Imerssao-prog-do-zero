@@ -2,24 +2,29 @@ body,
 h1  {
     padding: 0;
     margin: 0;
-    font-size: 3.8rem;      /* tamanho da fonte */
-    color: rgb(0, 0, 0); /* cor do texto */
-    text-align: center;     /* alinhamento */
+    font-size: 4vw;    
+    color: rgb(0, 0, 0);  
+    text-align: center;     
 }
 h2  {
     padding: 0;
     margin: 0;
-    font-size: 2.2rem;      /* tamanho da fonte */
-    color: rgb(0, 0, 0); /* cor do texto */
-    text-align: center;     /* alinhamento */
-}
-p  {
+    font-size: 2vw;
+    color: rgb(0, 0, 0);  
+    text-align: center;   
+}   
+p,span  {
     padding: 0;
     margin: 0;
-    font-size: 1.5rem;      /* tamanho da fonte */
-    font-style: italic;     /* estilo */
-    color: rgb(80, 78, 78); /* cor do texto */
-    text-align: center;     /* alinhamento */
+    font-size: 1rem;      
+    font-style: italic;     
+    color: rgb(80, 78, 78);  
+    text-align: center;     
+}
+span {
+  font-weight: bold;
+  letter-spacing: 1.3px;
+  padding-top: 10px;
 }
 .principal {
     width: 80%;
@@ -27,7 +32,6 @@ p  {
     color: #fff;
     display: grid;
     grid-template-columns: 50% 25% 25%;
-    /* grid-template-columns: 75% 25%; */
     grid-template-rows: auto auto 150px;
     grid-template-areas:    "header header header " 
                             "secao secao lateral" 
@@ -39,7 +43,7 @@ header {
  background-color: var(--global-color-header);
  display: flex;
  justify-content: space-around;
- padding:0px;
+ padding: 0px;
  align-items: center;
 }
 header div {
@@ -48,11 +52,7 @@ header div {
 
 aside {
   grid-area: lateral;
-  background-color: #E0D475;
-}
-
-footer {
-  grid-area: rodape;
+  background-color: #fff9ca;
 }
 footer {
   grid-area: rodape;
@@ -61,7 +61,6 @@ footer {
 }
 .parte1, .parte2, .parte3 {
   width: 25%;
-  background-color: #5de05e;
 }
 .parte2 {
   width: 50%;
@@ -81,7 +80,6 @@ footer {
 }
 #foto {
     height: 200px;
-    /* border-radius: 300px; */
     border: 1px solid rgb(176, 176, 176);
     padding: 10px;
     margin-top: 15px;
@@ -95,7 +93,7 @@ footer {
   padding: 5px 10px 0px 0px;
 }
 .rede-social img {
-  width: 20px;
+  width: 30px;
   cursor: pointer;
   margin-left: 8px;
 }
@@ -109,22 +107,29 @@ footer {
     justify-content: space-between;
     padding: 15px 10px 8px 10px;
 }
+.experiencia div {
+  width: 50%;
+}
 
-
+/********/
 /*tablet*/
 @media(max-width: 992px) {
-h1  {
-    font-size: 2rem;
-}
-h2  {
- font-size: 1.2rem;      /* tamanho da fonte */
-
-}
-.experiencia {
-    flex-direction: column;
-    justify-content: space-between;
-}
-
+  h1  {
+      font-size: 2rem;
+  }
+  h2  {
+  font-size: 2vw;   
+  }
+  .experiencia {
+      flex-direction: column;
+      justify-content: space-between;
+  }
+  .experiencia div {
+    width: 100%;
+  }
+  .rede-social img {
+    width: 22px;
+  }
   .principal {
       grid-template-columns: 100%;
       grid-template-areas: "header" "secao" "lateral" "rodape";
@@ -145,46 +150,49 @@ h2  {
   }
 }
 
-
+/*********** /
 /*smartphone*/
 @media(max-width: 768px) {
   
-body {
-      margin: 0 15px;
+  body {
+        margin: 0 15px;  
+    }
+  h1 {
+      font-size: 1.8rem;
   }
-h1  {
-    font-size: 1.8rem;
-}
-h2  {
-font-size: 1.2rem;      /* tamanho da fonte */
-
-}
- header {
- flex-direction: column;
- justify-content: center;
-}
-
-.experiencia {
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.principal, .parte1, .parte2, .parte3 {
-  width: 100%;
-}
-.parte2 {
-  order: initial; 
-}
-
-.foto {
-    margin-left: 0;
-    margin-bottom: 5px;
-    justify-content: center;
-}
-.rede-social {
+  h2 {
+  font-size: 1.2rem; 
+  }
+  p {
+    font-size: 1rem;
+  }
+  header {
+  flex-direction: column;
   justify-content: center;
-  align-self: center;
-  padding: 0px;
-}
+  }
+  .experiencia {
+      flex-direction: column;
+      justify-content: space-between;
+  }
+  .principal, .parte1, .parte2, .parte3 .experiencia{
+    width: 100%;
+  }
+  .parte2 {
+    order: initial; 
+  }
+  .foto {
+      margin-left: 0;
+      margin-bottom: 5px;
+      justify-content: center;
+  }
+  .rede-social {
+    justify-content: center;
+    align-self: center;
+    padding: 0px;
+  }
+  .rede-social img {
+    width: 22px;
+    margin-left: 0px;
+  }
 
 }
